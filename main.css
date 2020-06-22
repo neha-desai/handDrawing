@@ -1,0 +1,207 @@
+html,
+body {
+  width: 100%;
+  margin: 0px auto 0px auto;
+  padding: 0px;
+  overflow-x: hidden;
+}
+#header {
+  height: 200px;
+  width: 100%;
+  text-align: center;
+}
+
+.heading {
+  z-index: 1;
+  padding: 0px 10px 0px 10px;
+  position: absolute;
+  margin: -40px auto 0px auto;
+  color: #e16d6c;
+  font-size: 52px;
+  font-weight: 700;
+  display: inline-block;
+  background-color: white;
+  transform: scale(0);
+  animation: displayHeading 0.5s ease-in-out forwards 2s;
+}
+.headingName {
+  z-index: 1;
+  margin-top: 80px;
+  display: inline-block;
+  position: absolute;
+  color: black;
+  font-size: 28px;
+  font-weight: 700;
+  background-color: white;
+  transform: scale(0);
+  padding: 0px 10px 0px 10px;
+  letter-spacing: 10px;
+  animation: displayHeading 0.5s ease-in-out forwards 2s;
+}
+.by {
+  font-size: 24px;
+  margin-top: 40px;
+  font-weight: 700;
+  color: grey;
+}
+.circle {
+  width: 50px;
+  height: 50px;
+  background: #e16d6c;
+  position: absolute;
+  display: inline-block;
+  border-radius: 50%;
+  margin-top: 10px;
+  transform: scale(0);
+  animation: CircleAnim 1s ease-in-out forwards;
+}
+.leftLine {
+  display: inline-block;
+  background-color: #e16d6c;
+  width: 60px;
+  height: 5px;
+  transform: scale(0);
+  margin-left: 20px;
+  margin-top: 30px;
+  animation: increaseWidth 1s ease-in-out forwards 1s;
+}
+
+#bracket {
+  border: 5px solid #e16d6c;
+  z-index: -1;
+  height: 110px;
+  margin-top: -10px;
+  transform: scale(0);
+  animation: displayDiv 0.5s ease-in-out forwards 2s;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+#photoGrid {
+  margin-top: 0px;
+  height: 500px;
+  width: 1200px;
+  background: url("img/Untitled\ design.png");
+  animation: displayphotoGrid 0.5s ease-in-out forwards 4s;
+  transform: translateY(100px);
+  opacity: 0;
+}
+#artWork {
+  text-align: center;
+  margin-top: 20px;
+  width: 1200px;
+  height: 500px;
+}
+hr {
+  width: 30px;
+  height: 4px;
+  background-color: #e16d6c;
+  border: none;
+  margin-top: -5px;
+}
+.category {
+  display: inline-block;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  box-sizing: border-box;
+}
+
+.cat {
+  margin-top: 20px;
+  width: 200px;
+  box-shadow: 5px 5px 3px rgb(202, 198, 198);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 19px;
+  cursor: pointer;
+}
+
+.cat > img {
+  width: 100%;
+  height: 250px;
+}
+
+.catTitle {
+  margin-top: 5px;
+  padding-bottom: 10px;
+}
+@keyframes CircleAnim {
+  0%,
+  100% {
+    transform: scale(0);
+  }
+  50% {
+    transform: scale(1);
+  }
+}
+
+@keyframes increaseWidth {
+  0% {
+    transform: scaleX(0);
+  }
+  50% {
+    transform: scaleX(7);
+  }
+  100% {
+    transform: scaleX(0);
+  }
+}
+
+@keyframes displayDiv {
+  0% {
+    transform: scaleY(0);
+  }
+  100% {
+    transform: scaleY(1);
+  }
+}
+
+@keyframes displayHeading {
+  0% {
+    transform: scaleY(0);
+  }
+  100% {
+    transform: scaleY(1);
+  }
+}
+@keyframes displayphotoGrid {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .heading {
+    font-size: 24px;
+    margin-top: -20px;
+  }
+  .headingName {
+    margin-top: 71px;
+    letter-spacing: 6px;
+    font-size: 17px;
+  }
+  .by {
+    margin-top: 25px;
+    font-size: 19px;
+  }
+  #bracket {
+    height: 90px;
+  }
+  .circle {
+    margin-left: 15px;
+  }
+  #photoGrid {
+    margin-top: -50px;
+    width: 350px;
+    background: url("img/mobile.png");
+  }
+  #artWork {
+    width: 350px;
+  }
+}
