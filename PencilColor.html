@@ -20,12 +20,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="main.css" />
-    <link rel="stylesheet" href="aos.css" />
-    <script src="aos.js"></script>
   </head>
   <body>
-    <!-- NAVBAR-->
-
     <!-- TOP NAVIGATION -->
     <div class="topnav" id="myTopnav">
       <a href="index.html" class="logo">
@@ -34,66 +30,30 @@
       <a href="index.html#recent">Recent</a>
       <a href="pencilSketches.html">Pencil Sketches</a>
       <a href="WaterColor.html">Water Color Drawings</a>
-      <a href="PencilColor.html">Pencil Color Drawings</a>
+      <a href="PencilColor.html" class="active">Pencil Color Drawings</a>
       <a href="javascript:void(0);" class="icon" onclick="myFunction()">
         <i class="fa fa-bars"></i>
       </a>
     </div>
     <br />
     <!--HEADING-->
+    <br /><br />
     <div class="container-fluid" id="header">
-      <div class="circle"></div>
-      <div class="leftLine"></div>
-
-      <div class="container" id="bracket">
-        <div class="heading">HAND DRAWINGS</div>
+      <div class="container" id="bracket1">
+        <div class="heading1">HAND DRAWINGS</div>
         <div class="by">BY</div>
-        <div class="headingName">SHRAVANI DESAI</div>
+        <div class="headingName1">SHRAVANI DESAI</div>
       </div>
     </div>
-
-    <!--PHOTO GRID-->
-    <div class="container-fluid" id="photoGrid"></div>
-
-    <!--ARTWORK-->
-    <div class="container" id="artWork">
-      <h2>ART WORK</h2>
-      <hr />
-      <div class="category" data-aos="fade-down">
-        <a href="pencilSketches.html"
-          ><div class="cat">
-            <img src="img/7864b1e38b41756aeef377d25d2bfa63.jpg" />
-            <div class="catTitle">Pencil Skteches</div>
-          </div></a
-        >
-        <a href="WaterColor.html">
-          <div class="cat">
-            <img src="img/Malan-2.jpg" />
-            <div class="catTitle">Water Color Drawings</div>
-          </div></a
-        >
-        <a href="PencilColor.html">
-        <div class="cat">
-          <img src="img/mgps-706_4.jpg" />
-          <div class="catTitle">Pencil Color Drawings</div>
-        </div>
-      </div></a>
-    </div>
-    <br />
-    <!--RECENT WORK-->
-    <div
-      class="temp"
-      style="text-align: center; margin-top: -30px;"
-      id="recent"
-    >
-      <h2>Recent Work</h2>
+    <div class="temp" style="text-align: center; margin-top: -30px;">
+      <h2>Pencil Skteches</h2>
       <hr />
     </div>
 
-    <div class="row" data-aos="fade-down">
+    <div class="row">
       <div class="column">
         <img
-          src="img/WaterColor/9.jpg"
+          src="img/pencil Color/1.jpg"
           style="width: 100%;"
           onclick="openimg(this)"
         />
@@ -107,7 +67,7 @@
       </div>
       <div class="column">
         <img
-          src="img/Pencil Skteches/6.jpg"
+          src="img/pencil Color/3.jpg"
           style="width: 100%;"
           onclick="openimg(this)"
         />
@@ -121,7 +81,6 @@
       </div>
     </div>
     <br />
-
     <div class="container-fluid" id="fullimg">
       <button onclick="closeIMG()"><span class="fa fa-times"></span></button>
       <div class="container-fluid" id="content"></div>

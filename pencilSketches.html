@@ -20,19 +20,15 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="main.css" />
-    <link rel="stylesheet" href="aos.css" />
-    <script src="aos.js"></script>
   </head>
   <body>
-    <!-- NAVBAR-->
-
     <!-- TOP NAVIGATION -->
     <div class="topnav" id="myTopnav">
       <a href="index.html" class="logo">
         <b>HAND DRAWINGS</b>
       </a>
       <a href="index.html#recent">Recent</a>
-      <a href="pencilSketches.html">Pencil Sketches</a>
+      <a href="pencilSketches.html" class="active">Pencil Sketches</a>
       <a href="WaterColor.html">Water Color Drawings</a>
       <a href="PencilColor.html">Pencil Color Drawings</a>
       <a href="javascript:void(0);" class="icon" onclick="myFunction()">
@@ -41,87 +37,111 @@
     </div>
     <br />
     <!--HEADING-->
+    <br /><br />
     <div class="container-fluid" id="header">
-      <div class="circle"></div>
-      <div class="leftLine"></div>
-
-      <div class="container" id="bracket">
-        <div class="heading">HAND DRAWINGS</div>
+      <div class="container" id="bracket1">
+        <div class="heading1">HAND DRAWINGS</div>
         <div class="by">BY</div>
-        <div class="headingName">SHRAVANI DESAI</div>
+        <div class="headingName1">SHRAVANI DESAI</div>
       </div>
     </div>
-
-    <!--PHOTO GRID-->
-    <div class="container-fluid" id="photoGrid"></div>
-
-    <!--ARTWORK-->
-    <div class="container" id="artWork">
-      <h2>ART WORK</h2>
-      <hr />
-      <div class="category" data-aos="fade-down">
-        <a href="pencilSketches.html"
-          ><div class="cat">
-            <img src="img/7864b1e38b41756aeef377d25d2bfa63.jpg" />
-            <div class="catTitle">Pencil Skteches</div>
-          </div></a
-        >
-        <a href="WaterColor.html">
-          <div class="cat">
-            <img src="img/Malan-2.jpg" />
-            <div class="catTitle">Water Color Drawings</div>
-          </div></a
-        >
-        <a href="PencilColor.html">
-        <div class="cat">
-          <img src="img/mgps-706_4.jpg" />
-          <div class="catTitle">Pencil Color Drawings</div>
-        </div>
-      </div></a>
-    </div>
-    <br />
-    <!--RECENT WORK-->
-    <div
-      class="temp"
-      style="text-align: center; margin-top: -30px;"
-      id="recent"
-    >
-      <h2>Recent Work</h2>
+    <div class="temp" style="text-align: center; margin-top: -30px;">
+      <h2>Pencil Skteches</h2>
       <hr />
     </div>
 
-    <div class="row" data-aos="fade-down">
+    <div class="row">
       <div class="column">
         <img
-          src="img/WaterColor/9.jpg"
+          src="img/Pencil Skteches/1.jpg"
+          style="width: 100%;"
+          onclick="openimg(this)"
+        />
+        <img
+          src="img/Pencil Skteches/5.jpg"
+          style="width: 100%;"
+          onclick="openimg(this)"
+        />
+        <img
+          src="img/Pencil Skteches/9.jpg"
+          style="width: 100%;"
+          onclick="openimg(this)"
+        />
+        <img
+          src="img/Pencil Skteches/13.jpg"
           style="width: 100%;"
           onclick="openimg(this)"
         />
       </div>
       <div class="column">
         <img
-          src="img/pencil Color/2.jpg"
+          src="img/Pencil Skteches/2.jpg"
           style="width: 100%;"
           onclick="openimg(this)"
         />
-      </div>
-      <div class="column">
         <img
           src="img/Pencil Skteches/6.jpg"
           style="width: 100%;"
           onclick="openimg(this)"
         />
+        <img
+          src="img/Pencil Skteches/10.jpg"
+          style="width: 100%;"
+          onclick="openimg(this)"
+        />
+        <img
+          src="img/Pencil Skteches/14.jpg"
+          style="width: 100%;"
+          onclick="openimg(this)"
+        />
       </div>
       <div class="column">
         <img
-          src="img/pencil Color/4.jpg"
+          src="img/Pencil Skteches/3.jpg"
+          style="width: 100%;"
+          onclick="openimg(this)"
+        />
+        <img
+          src="img/Pencil Skteches/7.jpg"
+          style="width: 100%;"
+          onclick="openimg(this)"
+        />
+        <img
+          src="img/Pencil Skteches/11.jpg"
+          style="width: 100%;"
+          onclick="openimg(this)"
+        />
+        <img
+          src="img/Pencil Skteches/15.jpg"
+          style="width: 100%;"
+          onclick="openimg(this)"
+        />
+      </div>
+
+      <div class="column">
+        <img
+          src="img/Pencil Skteches/4.jpg"
+          style="width: 100%;"
+          onclick="openimg(this)"
+        />
+        <img
+          src="img/Pencil Skteches/8.jpg"
+          style="width: 100%;"
+          onclick="openimg(this)"
+        />
+        <img
+          src="img/Pencil Skteches/12.jpg"
+          style="width: 100%;"
+          onclick="openimg(this)"
+        />
+        <img
+          src="img/Pencil Skteches/16.jpg"
           style="width: 100%;"
           onclick="openimg(this)"
         />
       </div>
     </div>
     <br />
-
     <div class="container-fluid" id="fullimg">
       <button onclick="closeIMG()"><span class="fa fa-times"></span></button>
       <div class="container-fluid" id="content"></div>
