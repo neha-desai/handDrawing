@@ -379,6 +379,12 @@ button {
     flex: 50%;
     max-width: 50%;
   }
+  #recent {
+    margin-top: 0px;
+  }
+  #recentArtwork {
+    margin-top: 0px;
+  }
 }
 
 @media screen and (max-width: 550px) {
@@ -428,5 +434,9 @@ button {
     display: inline-block;
     margin: 100px auto;
     width: 100%;
+  }
+
+  #recent {
+    margin-top: 550px;
   }
 }
