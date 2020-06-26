@@ -63,19 +63,19 @@
         <a href="pencilSketches.html"
           ><div class="cat">
             <img src="img/7864b1e38b41756aeef377d25d2bfa63.jpg" />
-            <div class="catTitle">Pencil Skteches</div>
+            <div class="catTitle">Pencil Skteches<b> <span class="fa fa-chevron-right"></span></b></div>
           </div></a
         >
         <a href="WaterColor.html">
           <div class="cat">
             <img src="img/Malan-2.jpg" />
-            <div class="catTitle">Water Color Drawings</div>
+            <div class="catTitle">Water Color Drawings<b> <span class="fa fa-chevron-right"></span></b></div>
           </div></a
         >
         <a href="PencilColor.html">
         <div class="cat">
           <img src="img/mgps-706_4.jpg" />
-          <div class="catTitle">Pencil Color Drawings</div>
+          <div class="catTitle">Pencil Color Drawings<b> <span class="fa fa-chevron-right"></span></b></div>
         </div>
       </div></a>
     </div>
@@ -85,7 +85,7 @@
       style="text-align: center;box-sizing: border-box;"
       id="recent"
     >
-      <h2>Recent Work</h2>
+      <h2>RECENT WORK</h2>
       <hr />
     </div>
 
@@ -96,10 +96,20 @@
           style="width: 100%;"
           onclick="openimg(this)"
         />
+        <img
+          src="img/WaterColor/3.jpg"
+          style="width: 100%;"
+          onclick="openimg(this)"
+        />
       </div>
       <div class="column">
         <img
           src="img/pencil Color/2.jpg"
+          style="width: 100%;"
+          onclick="openimg(this)"
+        />
+        <img
+          src="img/Pencil Skteches/7.jpg"
           style="width: 100%;"
           onclick="openimg(this)"
         />
@@ -120,7 +130,10 @@
       </div>
     </div>
     <br />
-
+<div class="container-fluid" id="footer">
+  Hello there! This is <b>Shravani Desai</b>.<br> This website is entire collection of my drawings till date. <br>Keep Supporting!
+  <div class="toTop" onclick="goToTop()"><span class="fa fa-arrow-up"></span></div>
+</div>
     <div class="container-fluid" id="fullimg">
       <button onclick="closeIMG()"><span class="fa fa-times"></span></button>
       <div class="container-fluid" id="content"></div>
@@ -145,6 +158,11 @@
 
       function closeIMG() {
         document.getElementById("fullimg").style.display = "none";
+      }
+
+      function goToTop(){
+        document.body.scrollTop = 0; // For Safari
+  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
       }
       AOS.init();
     </script>

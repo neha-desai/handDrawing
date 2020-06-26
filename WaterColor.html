@@ -101,6 +101,14 @@
       </div>
     </div>
     <br />
+    <div class="container-fluid" id="footer">
+      Hello there! This is <b>Shravani Desai</b>.<br />
+      This website is entire collection of my drawings till date. <br />Keep
+      Supporting!
+      <div class="toTop" onclick="goToTop()">
+        <span class="fa fa-arrow-up"></span>
+      </div>
+    </div>
     <div class="container-fluid" id="fullimg">
       <button onclick="closeIMG()"><span class="fa fa-times"></span></button>
       <div class="container-fluid" id="content"></div>
@@ -125,6 +133,11 @@
 
       function closeIMG() {
         document.getElementById("fullimg").style.display = "none";
+      }
+
+      function goToTop() {
+        document.body.scrollTop = 0; // For Safari
+        document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
       }
       AOS.init();
     </script>

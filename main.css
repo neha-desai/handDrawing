@@ -141,16 +141,14 @@ hr {
   flex-wrap: wrap;
   justify-content: space-around;
   box-sizing: border-box;
-  background: url("img/abstract final.png");
-  background-repeat: no-repeat;
-  background-position: right;
+
   height: 420px;
 }
 
 .cat {
   margin-top: 20px;
   padding: 0px 0px 0px 0px;
-  width: 200px;
+  width: 230px;
   box-shadow: 3px 3px 10px rgb(202, 198, 198);
   display: flex;
   flex-direction: column;
@@ -159,8 +157,11 @@ hr {
   cursor: pointer;
   height: 300px;
   font-weight: 700;
+  text-align: center;
 }
-
+.cat .fa {
+  font-size: 13px;
+}
 .cat > img {
   width: 100%;
   height: 250px;
@@ -281,6 +282,30 @@ button {
   color: white;
   font-size: 32px;
   border: none;
+}
+#recent {
+  margin-top: -100px;
+}
+
+#footer {
+  background-color: #e16d6c;
+  color: white;
+  text-align: center;
+  padding: 10px 10px 20px 10px;
+  font-size: 19px;
+}
+
+.toTop {
+  float: right;
+  border: 2px solid white;
+  padding: 4px 10px 5px 10px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.toTop:hover {
+  background-color: white;
+  color: #e16d6c;
 }
 @keyframes CircleAnim {
   0%,
@@ -438,5 +463,8 @@ button {
 
   #recent {
     margin-top: 550px;
+  }
+  #footer {
+    font-size: 15px;
   }
 }
