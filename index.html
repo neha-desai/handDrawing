@@ -89,47 +89,39 @@
       <hr />
     </div>
 
-    <div class="row" data-aos="fade-down" id="recentArtwork">
-      <div class="column">
-        <img
-          src="img/WaterColor/9.jpg"
-          style="width: 100%;"
-          onclick="openimg(this)"
-        />
-        <img
-          src="img/WaterColor/3.jpg"
-          style="width: 100%;"
-          onclick="openimg(this)"
-        />
+    <div class="container">
+    <div id="demo" class="carousel slide" data-ride="carousel">
+
+      <!-- Indicators -->
+      <ul class="carousel-indicators">
+        <li data-target="#demo" data-slide-to="0" class="active"></li>
+        <li data-target="#demo" data-slide-to="1"></li>
+        <li data-target="#demo" data-slide-to="2"></li>
+      </ul>
+      
+      <!-- The slideshow -->
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="img/WaterColor/9.jpg" onclick="openimg(this)">
+        </div>
+        <div class="carousel-item">
+          <img src="img/pencil Color/2.jpg" onclick="openimg(this)">
+        </div>
+        <div class="carousel-item">
+          <img src="img/Pencil Skteches/4.jpg" onclick="openimg(this)">
+        </div>
       </div>
-      <div class="column">
-        <img
-          src="img/pencil Color/2.jpg"
-          style="width: 100%;"
-          onclick="openimg(this)"
-        />
-        <img
-          src="img/Pencil Skteches/7.jpg"
-          style="width: 100%;"
-          onclick="openimg(this)"
-        />
-      </div>
-      <div class="column">
-        <img
-          src="img/Pencil Skteches/6.jpg"
-          style="width: 100%;"
-          onclick="openimg(this)"
-        />
-      </div>
-      <div class="column">
-        <img
-          src="img/pencil Color/4.jpg"
-          style="width: 100%;"
-          onclick="openimg(this)"
-        />
-      </div>
+      
+      <!-- Left and right controls -->
+      <a class="carousel-control-prev" href="#demo" data-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </a>
+      <a class="carousel-control-next" href="#demo" data-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </a>
     </div>
-    <br />
+    </div>
+      <br />
 <div class="container-fluid" id="footer">
   Hello there! This is <b>Shravani Desai</b>.<br> This website is entire collection of my drawings till date. <br>Keep Supporting!
   <div class="toTop" onclick="goToTop()"><span class="fa fa-arrow-up"></span></div>
